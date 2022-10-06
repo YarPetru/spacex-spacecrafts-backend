@@ -1,14 +1,15 @@
-const { User } = require("../../models/user");
+// const { User } = require("../../models/user");
 
 const current = async (req, res) => {
-  const { _id } = req.user;
-  const { email, subscription } = await User.findById(_id);
-  res.json({
+  const { email, name } = req.user;
+  res.status(200).json({
     status: "success",
     code: 200,
     data: {
-      email,
-      subscription,
+      user: {
+        email,
+        name,
+      },
     },
   });
 };

@@ -20,7 +20,7 @@ router.post(
   controllerWrapper(controller.login)
 );
 
-router.post(
+router.get(
   "/logout",
   authenticate,
   validationBody(schemas.loginSchema),
