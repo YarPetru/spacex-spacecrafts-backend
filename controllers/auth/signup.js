@@ -2,8 +2,9 @@ const bcrypt = require("bcryptjs");
 
 const { User } = require("../../models/user");
 const { RequestError } = require("../../helpers");
+// const { signup } = require(".");
 
-const register = async (req, res, next) => {
+const signup = async (req, res, next) => {
   const { name, email, password } = req.body;
   const user = await User.findOne({ email });
 
@@ -24,4 +25,4 @@ const register = async (req, res, next) => {
   // });
 };
 
-module.exports = register;
+module.exports = signup;
