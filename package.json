@@ -18,7 +18,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.3",
     "morgan": "1.10.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "nodemon": "2.0.15"
   },
   "devDependencies": {
     "eslint": "7.19.0",
@@ -27,7 +28,6 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "5.2.0",
-    "nodemon": "2.0.15",
     "prettier": "2.7.1"
   }
 }
