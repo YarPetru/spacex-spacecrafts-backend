@@ -41,10 +41,6 @@ const register = async (req, res, next) => {
   });
   res.status(201);
   next();
-  // const result = await User.create({ name, email, password: hashPsw });
-  // res.status(201).json({
-  //   email: result.email,
-  // });
 };
 
 module.exports = register;

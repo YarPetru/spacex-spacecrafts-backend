@@ -11,7 +11,8 @@ const router = express.Router();
 router.post(
   "/register",
   validationBody(schemas.registerSchema),
-  controllerWrapper(controller.register)
+  controllerWrapper(controller.register),
+  controllerWrapper(controller.login)
 );
 
 router.post(
